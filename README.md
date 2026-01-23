@@ -119,7 +119,7 @@ Use the [Utopia Fluid Type Calculator](https://utopia.fyi/type/calculator?c=390,
 ├── .prettierrc # Prettier configuration
 ├── CHANGELOG.md # Project changelog
 ├── components.json # Shadcn UI components configuration
-├── eslintrc.config.js # ESLint configuration
+├── eslint.config.js # ESLint configuration
 ├── index.html # Main HTML file
 ├── package.json # Project metadata and dependencies
 ├── PROJECT_OVERVIEW.md # Overview of the project

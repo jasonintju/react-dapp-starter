@@ -26,7 +26,6 @@ const networks: [AppKitNetwork, ...AppKitNetwork[]] = [mainnet, arbitrum];
 const wagmiAdapter = new WagmiAdapter({
   networks,
   projectId,
-  ssr: true,
 });
 
 // 5. Create modal

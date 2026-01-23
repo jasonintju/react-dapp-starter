@@ -131,7 +131,7 @@ export default function Header() {
   const [isSheetOpen, setIsSheetOpen] = useState(false);
 
   return (
-    <header className="bg-background/95 supports-[backdrop-filter]:bg-background/60 sticky top-0 z-40 w-full border-b px-6 backdrop-blur">
+    <header className="sticky top-0 z-40 w-full border-b px-6 backdrop-blur">
       <div className="container flex h-14 items-center justify-between md:justify-start">
         <MantaLogo />
         {isMobile ? (
