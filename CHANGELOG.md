@@ -9,6 +9,14 @@ _Note: This is a sample changelog provided as a demonstration for how to structu
 
 ## [Unreleased]
 
+### Changed
+
+- Upgraded Wagmi to v3 (`useBalance` no longer returns `formatted`; derive it via viem `formatUnits`)
+- Upgraded Vite to v8 (Rolldown bundler), React Router to v8, ESLint to v10, TypeScript to 6.0
+- Upgraded lucide-react to stable v1
+- Removed deprecated `baseUrl` from tsconfig (TypeScript 6.0); `paths` now resolve relative to the tsconfig file
+- Updated all remaining dependencies to latest versions (React 19.2.7, viem 2.54, Reown AppKit 1.8.21, Tailwind CSS 4.3, TanStack Query 5.101, etc.)
+
 ### Added
 
 - Comprehensive responsive design support with `useResponsive` hook

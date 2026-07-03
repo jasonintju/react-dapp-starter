@@ -10,10 +10,11 @@
 
 - **[TypeScript](https://www.typescriptlang.org/)**: Strongly-typed language that builds on JavaScript, giving you better tooling at any scale.
 - **[React 19](https://react.dev/)**: Latest React version with improved performance and new features.
-- **[React Router 7](https://reactrouter.com/)**: A declarative routing library for React that makes it easy to navigate your app.
+- **[Vite 8](https://vite.dev/)**: Next-generation frontend tooling with the Rolldown bundler for lightning-fast builds.
+- **[React Router 8](https://reactrouter.com/)**: A declarative routing library for React that makes it easy to navigate your app.
 - **[Tailwind CSS 4](https://tailwindcss.com/)**: Utility-first CSS framework with native Vite integration and CSS-first configuration.
 - **[Reown AppKit](https://reown.com/)**: The toolkit to build onchain app UX with wallet connection support.
-- **[Wagmi](https://wagmi.sh/)**: A set of React Hooks for working with Ethereum.
+- **[Wagmi 3](https://wagmi.sh/)**: A set of React Hooks for working with Ethereum.
 - **[Viem](https://viem.sh/)**: A toolkit for handling Ethereum-related data and logic.
 - **[Shadcn UI](https://ui.shadcn.com/)**: A collection of pre-built UI components for a fast and consistent development experience.
 - **[Zustand](https://github.com/pmndrs/zustand)**: A small, fast, and scalable state management solution for React.
@@ -28,7 +29,7 @@
    You can use a tool like [degit](https://github.com/Rich-Harris/degit) to scaffold your project with this template.
 
    ```bash
-   npx degit Manta-Network/react-dapp-starter#main your-project
+   npx degit jasonintju/react-dapp-starter#main your-project
    cd your-project
    ```
 
