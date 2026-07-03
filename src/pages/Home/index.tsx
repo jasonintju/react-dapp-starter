@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import {
   useAppKit,
   useAppKitAccount,
@@ -23,7 +23,7 @@ import { toast } from 'sonner';
 import { Button } from '@/components/ui/button';
 
 function Home() {
-  const { open } = useAppKit();
+  const { open, close } = useAppKit();
   const { address, isConnected, caipAddress } = useAppKitAccount();
   const { selectedNetworkId } = useAppKitState();
   const { disconnect } = useDisconnect();
@@ -32,6 +32,17 @@ function Home() {
     address: address as `0x${string}` | undefined,
   });
   const [copied, setCopied] = useState(false);
+
+  // AppKit's network-switch view goes back to the network list on success
+  // instead of closing the modal (reown-com/appkit#5480), which reads as a
+  // failed switch. Close it ourselves once the chain actually changes.
+  const prevChainIdRef = useRef(chainId);
+  useEffect(() => {
+    if (prevChainIdRef.current !== chainId) {
+      prevChainIdRef.current = chainId;
+      close();
+    }
+  }, [chainId, close]);
 
   const handleCopyAddress = async () => {
     if (address) {
