@@ -1,5 +1,7 @@
 import { useMediaQuery } from 'react-responsive';
 
+import { BREAKPOINTS } from '@/lib/constants';
+
 /**
  * Tailwind CSS Default Breakpoints
  *
@@ -56,10 +58,13 @@ import { useMediaQuery } from 'react-responsive';
  */
 
 export function useResponsive() {
-  const isMobile = useMediaQuery({ maxWidth: 767 }); // < 768
-  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1439 }); // 768 ~ 1439
-  const isDesktop = useMediaQuery({ minWidth: 1440 }); // >= 1440
-  const isLargeDesktop = useMediaQuery({ minWidth: 2560 }); // Optional
+  const isMobile = useMediaQuery({ maxWidth: BREAKPOINTS.tablet - 1 }); // < 768
+  const isTablet = useMediaQuery({
+    minWidth: BREAKPOINTS.tablet,
+    maxWidth: BREAKPOINTS.desktop - 1,
+  }); // 768 ~ 1439
+  const isDesktop = useMediaQuery({ minWidth: BREAKPOINTS.desktop }); // >= 1440
+  const isLargeDesktop = useMediaQuery({ minWidth: BREAKPOINTS.largeDesktop }); // Optional
 
   return {
     isMobile,

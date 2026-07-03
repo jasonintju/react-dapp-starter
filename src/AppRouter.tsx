@@ -9,7 +9,7 @@ import {
 } from 'react-router';
 
 import ErrorBoundary from '@/components/ErrorBoundary';
-import Header from '@/components/Header/Header';
+import Header from '@/components/Header';
 import { Toaster } from '@/components/ui/sonner';
 
 const Home = lazy(() => import('@/pages/Home'));

@@ -16,9 +16,13 @@ _Note: This is a sample changelog provided as a demonstration for how to structu
 - Upgraded lucide-react to stable v1
 - Removed deprecated `baseUrl` from tsconfig (TypeScript 6.0); `paths` now resolve relative to the tsconfig file
 - Updated all remaining dependencies to latest versions (React 19.2.7, viem 2.54, Reown AppKit 1.8.21, Tailwind CSS 4.3, TanStack Query 5.101, etc.)
+- `yarn lint` now fails on warnings (`--max-warnings 0`); `react-refresh/only-export-components` is disabled for `components/ui` (shadcn variant exports)
+- Renamed `components/Header/Header.tsx` to `components/Header/index.tsx` per the folder + index convention
 
 ### Added
 
+- `AGENTS.md` AI coding guide with project conventions, plus `CLAUDE.md` entry point for Claude Code
+- `lib/constants.ts` as the single home for project-wide constants (responsive breakpoints, etc.)
 - Comprehensive responsive design support with `useResponsive` hook
 - Fluid typography system for smooth font scaling (390px - 1440px viewports)
 - Enhanced Home page with wallet dashboard UI

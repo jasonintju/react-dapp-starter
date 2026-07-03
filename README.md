@@ -21,6 +21,7 @@
 - **[TanStack Query](https://tanstack.com/query/latest/docs/framework/react/overview)**: Powerful data fetching, caching, and synchronization for server state management.
 - **[React Responsive](https://github.com/yocontra/react-responsive)**: Media queries in React with custom breakpoint hooks.
 - **ESLint & Prettier**: Code quality and formatting tools to ensure a clean codebase.
+- **AI-ready**: Ships with [AGENTS.md](./AGENTS.md), a coding guide that keeps AI-generated code consistent with the project's conventions (also wired up for Claude Code via `CLAUDE.md`).
 
 ## Getting Started
 
@@ -118,6 +119,8 @@ Use the [Utopia Fluid Type Calculator](https://utopia.fyi/type/calculator?c=390,
 ├── public/ # Static public assets
 ├── .gitignore # Git ignore file
 ├── .prettierrc # Prettier configuration
+├── AGENTS.md # AI coding guide (conventions for AI-generated code)
+├── CLAUDE.md # Claude Code entry point (references AGENTS.md)
 ├── CHANGELOG.md # Project changelog
 ├── components.json # Shadcn UI components configuration
 ├── eslint.config.js # ESLint configuration

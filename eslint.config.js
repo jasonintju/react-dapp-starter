@@ -37,5 +37,12 @@ export default tseslint.config(
         },
       ],
     },
+  },
+  {
+    // shadcn/ui files export variants (e.g. buttonVariants) alongside components
+    files: ['src/components/ui/**/*.{ts,tsx}'],
+    rules: {
+      'react-refresh/only-export-components': 'off',
+    },
   }
 );
