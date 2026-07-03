@@ -6,6 +6,7 @@ import {
   useDisconnect,
 } from '@reown/appkit/react';
 import { useBalance, useChainId } from 'wagmi';
+import { formatUnits } from 'viem';
 import {
   Wallet,
   Link as LinkIcon,
@@ -186,7 +187,9 @@ function Home() {
                 <div className="space-y-2">
                   <div className="text-4xl font-bold text-slate-900 dark:text-white">
                     {balance
-                      ? parseFloat(balance.formatted).toFixed(4)
+                      ? parseFloat(
+                          formatUnits(balance.value, balance.decimals)
+                        ).toFixed(4)
                       : '0.0000'}
                   </div>
                   <div className="text-sm text-slate-600 dark:text-slate-400">
